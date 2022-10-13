@@ -1,0 +1,581 @@
+body {
+  height: fit-content;
+}
+html {
+  height: auto;
+}
+iframe {
+  border: none;
+}
+section.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* height: calc(90vh - 3rem); */
+}
+section.offer input {
+  border: 1px #2ea4db solid !important;
+}
+section.offer .offer-info {
+  width: 100%;
+}
+section.offer .offer-info > h4 {
+  margin-bottom: 0;
+}
+section.offer .offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+section.offer .offer-wrapper .indicators {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+section.offer .offer-wrapper .indicators.submit-form-indicators {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+.submit-form {
+  width: 50%;
+  margin: auto;
+  max-width: 600px;
+  min-width: 222px;
+}
+@media (min-width: 1024px) {
+  section.offer .offer-wrapper .OfferPage.ant-form {
+    place-content: center;
+  }
+  section.offer .offer-wrapper .indicators.submit-form-indicators {
+    width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .submit-form {
+    width: 600px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  section.offer .offer-wrapper .indicators.submit-form-indicators {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  section.offer .offer-wrapper .indicators.submit-form-indicators {
+    width: 100%;
+  }
+}
+section.offer
+  .offer-wrapper
+  .indicators.submit-form-indicators
+  .selected-car-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+section.offer
+  .offer-wrapper
+  .indicators.submit-form-indicators
+  .selected-car-image
+  img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  /* max-width: 350px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.offer
+  .offer-wrapper
+  .indicators.submit-form-indicators
+  .selected-car-image
+  div {
+  max-width: none !important;
+  max-height: none !important;
+}
+section.offer
+  .offer-wrapper
+  .indicators.submit-form-indicators
+  .selected-car-image
+  .colorDiv {
+  width: clamp(80px, 60%, 350px) !important;
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .indicators {
+    height: 2.8125rem;
+    margin-top: auto;
+  }
+}
+section.offer .offer-wrapper .indicators .ant-btn {
+  display: flex;
+  margin-left: auto;
+}
+section.offer .offer-wrapper .indicators .ant-btn-danger {
+  padding: 5px 10px;
+  background-color: #f5222d;
+  color: #fff;
+}
+section.offer .offer-wrapper .indicators .ant-btn-danger:hover {
+  background-color: #c01d24;
+}
+section.offer .offer-wrapper .indicators .selectedOptions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin: auto;
+}
+section.offer
+  .offer-wrapper
+  .indicators.submit-form-indicators
+  .selectedOptions {
+  margin-right: auto;
+}
+section.offer .offer-wrapper .indicators.display-column .ant-btn-danger {
+  margin-left: inherit;
+  margin-top: 10px;
+}
+section.offer .offer-wrapper .indicators .selectedOptions > div {
+  background-color: #2ea4db;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin: 0 0.5rem 10px 0.5rem;
+  user-select: none;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  box-shadow: 0px 0px 0px 1px #2ea4db;
+  transition: 0.3s all ease-in;
+  white-space: nowrap;
+}
+section.offer .offer-wrapper .indicators .selectedOptions > div:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 1px #2ea4db;
+  color: #333;
+}
+/* section.offer .offer-wrapper .slider {
+  height: 60vw !important;
+} */
+section.offer .offer-wrapper .slider {
+  height: auto !important;
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .slider {
+    min-height: 16vw !important;
+  }
+}
+section.offer .offer-wrapper .slider .slider-control-centerleft,
+section.offer .offer-wrapper .slider .slider-control-centerright {
+  font-size: 5vw;
+  padding: 0;
+  padding-bottom: 0.75vw;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  section.offer .offer-wrapper .slider .slider-control-centerleft,
+  section.offer .offer-wrapper .slider .slider-control-centerright {
+    font-size: 2rem;
+    padding-bottom: 0.4rem;
+  }
+}
+section.offer .offer-wrapper .slider .slider-control-centerleft {
+  margin-left: -30px;
+}
+section.offer .offer-wrapper .slider .slider-control-centerright {
+  margin-right: -30px;
+}
+.wrapper-card {
+  outline: none !important;
+  min-height: 16vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+section.offer .offer-wrapper .slider .cardC {
+  height: auto;
+  min-height: 50px;
+  width: 100%;
+  max-width: 25vh;
+  max-height: 25vh;
+  flex: 1;
+  /* padding: 10px; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+}
+@media (min-width: 1024px) {
+  section.offer .offer-wrapper .slider .cardC {
+    max-width: calc(100% - 10px);
+    max-height: 35vh;
+  }
+}
+section.offer .offer-wrapper .slider .cardC.cursor-auto {
+  cursor: auto;
+  display: flex;
+  flex-direction: row;
+  max-width: none;
+}
+section.offer .offer-wrapper .slider .cardC .imgWrapper > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* @media (min-width: 769px) {
+  section.offer .offer-wrapper .slider .cardC {
+    height: 16vw;
+  }
+} */
+.carousel-controller img {
+  max-width: 50px;
+}
+@media (max-width: 768px) {
+  section.offer .offer-wrapper .slider .cardC > div {
+    /* height: 30vw; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.offer .offer-wrapper .slider .cardC .year-card {
+    min-width: 120px;
+    max-height: 45vw;
+  }
+  section.offer .offer-wrapper .slider .cardC .imgWrapper > img {
+    /* max-width: 200px;
+    max-height: 200px;
+    width: calc(100% - 40px); */
+  }
+  .carousel-controller img {
+    max-width: 30px;
+  }
+}
+section.offer
+  .offer-wrapper
+  .slider
+  .wrapper-card-mobile
+  .cardC
+  .imgWrapper
+  > img {
+  max-width: 100px;
+  max-height: 100px;
+}
+section.offer .offer-wrapper .slider .cardC .imgWrapper {
+  max-height: calc(100% - 40px);
+  max-width: calc(100% - 10px);
+}
+section.offer .offer-wrapper .slider .cardC > span:not(.ant-spin-dot) {
+  /* margin-top: auto; */
+  font-weight: 500;
+  font-size: 0.8rem;
+  height: 40px !important;
+  overflow: hidden;
+  white-space: normal;
+}
+@media (max-width: 769px) and (min-width: 517px) {
+  section.offer .offer-wrapper .slider .cardC > span:not(.ant-spin-dot) {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .slider .cardC > span:not(.ant-spin-dot) {
+    font-size: 0.8rem;
+    white-space: normal;
+  }
+}
+section.offer .offer-wrapper .slider .cardLoad {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  width: 96vw;
+  height: 60vw;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .slider .cardLoad {
+    height: 13vw;
+  }
+}
+section.offer .offer-wrapper .OfferPage {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+  margin-bottom: auto;
+  /* max-width: 768px; */
+  /* flex-direction: column; */
+}
+section.offer .offer-wrapper .OfferPage.ant-form {
+  padding: 10px 30px;
+  /* height: calc(100% - 78px); */
+  height: 100%;
+  overflow-y: auto;
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .OfferPage.ant-form {
+    margin-top: 5px;
+    /* height: calc(90vh - 3rem); */
+    height: 100%;
+  }
+  section.offer .offer-wrapper .OfferPage.ant-form {
+    /* min-width: 31rem; */
+    /* max-width: 1200px; */
+    padding: 10px 50px;
+    /* flex-direction: row; */
+    overflow: hidden;
+  }
+  section.offer .offer-wrapper .OfferPage img {
+    max-height: 200px;
+  }
+}
+section.offer .offer-wrapper .OfferPage.carSelected {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  display: none;
+}
+@media (min-width: 769px) {
+  section.offer .offer-wrapper .OfferPage.carSelected {
+    width: calc(100% / 3);
+    min-width: 33rem;
+  }
+}
+section.offer .offer-wrapper .OfferPage > .hidden {
+  display: none !important;
+}
+section.offer .offer-wrapper .OfferPage .name {
+  width: 100%;
+}
+section.offer .offer-wrapper .OfferPage .name input {
+  text-align: center;
+}
+section.offer .offer-wrapper .OfferPage .zip {
+  width: 100%;
+}
+
+section.offer .offer-wrapper .OfferPage .zip input {
+  text-align: center;
+}
+
+section.offer .offer-wrapper .OfferPage .distance {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section.offer .offer-wrapper .OfferPage .distance .ant-col.ant-form-item-label {
+  padding: 0;
+  text-align: center;
+}
+section.offer
+  .offer-wrapper
+  .OfferPage
+  .distance
+  .ant-col.ant-form-item-label
+  > label {
+  margin-bottom: 0;
+}
+section.offer .offer-wrapper .OfferPage .financing {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section.offer
+  .offer-wrapper
+  .OfferPage
+  .financing
+  .ant-col.ant-form-item-label {
+  padding: 0;
+  text-align: center;
+}
+section.offer
+  .offer-wrapper
+  .OfferPage
+  .financing
+  .ant-col.ant-form-item-label
+  > label {
+  margin-bottom: 0;
+}
+section.offer .offer-wrapper .OfferPage-btn {
+  width: 100%;
+  margin: 1rem auto 0;
+  background-color: white;
+  color: #333;
+}
+section.offer .offer-wrapper .OfferPage-btn:hover {
+  width: 100%;
+  margin: 1rem auto 0;
+  box-shadow: 0px 0px 0px 1px #d9e2e6;
+  background-color: #2ea4db;
+  color: white;
+}
+section.offer .offer-wrapper .OfferPage .ant-radio-group {
+  width: 100%;
+  display: flex;
+  place-content: center;
+}
+
+section.offer .offer-wrapper .OfferPage .ant-form-item {
+  margin-bottom: 0.75rem;
+}
+section.offer .offer-wrapper .OfferPage .ant-form-item-children {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.BindOnLeadModal input {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .submit-form {
+    width: 100%;
+    align-self: center;
+    max-width: 600px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .submit-form {
+    width: 30%;
+  }
+}
+.BuySubmitForm {
+  width: 100%;
+  margin: auto;
+}
+.slider .slider-frame {
+  display: flex;
+  justify-content: center;
+  text-align: -webkit-center;
+}
+.display-row {
+  display: flex;
+  flex-direction: row;
+}
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-button {
+  display: none;
+}
+.desktop-button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-button {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .desktop-button {
+    display: none !important;
+  }
+}
+.footer-logo {
+  max-height: 300px;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.slider-slide:focus {
+  outline: none !important;
+}
+.glow {
+  font-size: 2rem;
+  color: #242424;
+  font-weight: bold;
+  font-family: anton, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000000ba;
+  letter-spacing: -1.5px;
+}
+.year-select {
+  display: flex;
+  box-shadow: 0px 0px 6px 2px #2ea4db;
+  color: #0f3749;
+  border-radius: 10px;
+  font-size: 5vh !important;
+  width: calc(100% - 20px);
+  transition: 0.2s all ease-in;
+  place-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.year-select span,
+.year-select:hover span {
+  place-content: center;
+}
+.year-select.hoverable:hover {
+  background-color: #2ea4db;
+  color: white;
+}
+.not-hoverable {
+  cursor: auto;
+}
+.sm-logo-image {
+  width: clamp(110px, 10vh, 200px);
+  margin-left: auto;
+  margin-right: unset;
+}
+.sm-logo-image.absolute-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .sm-logo-image {
+    margin-right: auto;
+    max-width: none;
+  }
+}
+.carousel-controller {
+  padding: 0;
+  outline: none !important;
+  display: flex !important;
+}
+section.offer .offer-wrapper .slider .cardC .year-card {
+  display: inline-block;
+  position: relative;
+  width: 25vh;
+  height: calc(25vh - 10px);
+  max-height: 275px;
+  max-width: 275px;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+@media (max-width: 425px) {
+  .glow {
+    font-size: 1.4rem;
+  }
+}
